@@ -1,4 +1,4 @@
-# Telegramda yani ben boş işler müdürü :) <> @Hayiboo Tarafından düzenlenen ufak çaplı proje. 
+# Telegramda yani ben boş işler müdürü :) <> @memokra Tarafından düzenlenen ufak çaplı proje. 
 import os
 import requests
 import aiohttp
@@ -49,7 +49,7 @@ def bul(client, message):
         )
         print(str(e))
         return
-    m.edit("•> **Şarkı indiriliyor .**")
+    m.edit("•> **⏳**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
