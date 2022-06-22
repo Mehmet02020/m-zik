@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 async def cls(_, query: CallbackQuery):
     await query.message.delete()
 
-# EfsaneMusicVaves düzenlenmiştir.
+# Blackmuzikbotu düzenlenmiştir.
 
 @Client.on_message(command(["play", "oynat"]) 
                    & filters.group
@@ -109,7 +109,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "EfsaneMusicVaves"
+        user.first_name = "blackmuzikbotu"
     usar = user
     wew = usar.id
     try:
@@ -198,7 +198,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🔖 Oxygen Muzik Support", url=f"https://t.me/zkusagisohbet"),
+                InlineKeyboardButton("🔖 blackmuzikbot", url=f"https://t.me/sohbetikatarsis"),
             ],
         ]
     )
@@ -229,7 +229,7 @@ async def play(_, message: Message):
         await lel.edit("•> **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("•> **Ses İşleniyor...**")
+        await lel.edit("•> **⏳**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -260,7 +260,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🔖 Oxygen Müzik Support", url=f"https://t.me/zkusagisohbet"),
+                InlineKeyboardButton("🔖 blackmuzikbotu ", url=f"https://t.me/sohbetikatarsis"),
             ],
         ]
     )
